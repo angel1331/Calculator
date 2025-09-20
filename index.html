@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Калькулятор</title>
+</head>
+<body>
+  <div class="main">
+    <input class="js-input" type="text" readonly>
+  
+    <div class="first-line">
+      <button onclick="clearDisplay()">AC</button>
+      <button onclick="plusMinus()">+/-</button>
+      <button onclick="procentage()">%</button>
+      <button onclick="appendToDisplay('/')" id="yellow-button">/</button>
+    </div>
+  
+    <div class="second-line">
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('*')" id="yellow-button">X</button>
+    </div>
+  
+    <div class="third-line">
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="appendToDisplay('-')" id="yellow-button">-</button>
+    </div>
+  
+    <div class="fourth-line">
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="appendToDisplay('+')" id="yellow-button">+</button>
+    </div>
+  
+    <div class="fifth-line">
+      <button onclick="appendToDisplay('0')" id="zero-button">0</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="calculate()" id="yellow-button">=</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
